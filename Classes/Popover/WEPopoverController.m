@@ -387,7 +387,7 @@ static void animate(NSTimeInterval duration, void (^animationBlock)(void), void 
             [self.parentViewController addChildViewController:_contentViewController];
         }
 
-        [keyView addSubview:_backgroundView];
+        [theView addSubview:_backgroundView];
 
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyViewDidLayoutSubviewsNotification:) name:WEViewDidLayoutSubviewsNotification object:keyView];
 
